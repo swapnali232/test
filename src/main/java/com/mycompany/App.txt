@@ -1,0 +1,27 @@
+package com.mycompany.app;
+/**
+*Hello World!
+*
+*/
+public class App
+{
+  public static void main ( String[] args )
+    {
+        System.out.println(" Hello world" );
+        System.out.println("A NullpointerException is a drag..." );
+         Object myObject = null;
+        /**
+        *checker prevents this from compiling...
+        */
+        System.out.println("myObject: " + myObject.toString());
+        /**
+        *....which is simply fantastic. It shows:
+        *
+        *error: [dereference.of.nullable] dereference of possibly-null
+        *reference myObject
+        *
+        *https://checkerframework.org
+        */
+        System.out.println("... but thankfully );
+    }
+ }
